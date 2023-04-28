@@ -1,0 +1,40 @@
+.main-menu-point > a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.main-menu-point {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--terciary-color);
+    cursor: pointer;
+}
+
+.main-menu-point:first-child {
+    border-right: 1px solid var(--primary-color);
+}
+
+.main-menu-point:last-child {
+    border-left: 1px solid var(--primary-color);
+}
+
+.main-menu {
+    margin-block: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-selected {
+    background-color: var(--seccondary-color);
+}
+
+.menu-selected > a {
+    color: var(--primary-color);
+}
