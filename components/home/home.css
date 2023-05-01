@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: var(--seccondary-color);
+    color: var(--primary-color);
+    height: calc(100vh - 50px);
+}
+
+.persona-container-image {
+    width: 150px;
+    height: 150px;
+}
+
+.persona-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.personal-info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.persona-description-title {
+    padding: 0 10%;
+}
+
+.persona-description-container {
+    width: 100%;
+    text-align: left;
+    padding: 0 10%;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.home-button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--seccondary-color);
+    font-style: bolder;
+}
+
+.buttons-container > a{
+    width: 100%;
+    padding: 0 1rem;
+}
+

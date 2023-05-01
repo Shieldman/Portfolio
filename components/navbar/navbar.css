@@ -33,6 +33,7 @@
 
 .menu-selected {
     background-color: var(--seccondary-color);
+    border-bottom: 1px solid var(--seccondary-color);
 }
 
 .menu-selected > a {
