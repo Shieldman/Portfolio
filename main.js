@@ -28,21 +28,21 @@ const createButtonsListeners = () =>{
         const linkHref = ev.target.href; // Almacenamos la URL en una constante
         console.log('El link apunta a:', linkHref ); // La mostramos en consola
         switch (linkHref){
-            case 'http://localhost:5173/home':
+            case linkHref.includes('/home'):
                 document.querySelector('main').innerHTML='';
                 RenderHome();
                 document.querySelector('.main-menu-point:nth-child(1)').classList.add("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(2)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(3)').classList.remove("menu-selected");
                 break;
-            case 'http://localhost:5173/experience':
+            case linkHref.includes('/experience'):
                 document.querySelector('main').innerHTML='';
                 RenderExperience(references);
                 document.querySelector('.main-menu-point:nth-child(1)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(2)').classList.add("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(3)').classList.remove("menu-selected");
                 break;
-            case 'http://localhost:5173/projects':
+            case linkHref.includes('/projects'):
                 document.querySelector('main').innerHTML='';
                 RenderProjects(projects);
                 document.querySelector('.main-menu-point:nth-child(1)').classList.remove("menu-selected");

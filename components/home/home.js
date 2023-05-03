@@ -5,7 +5,7 @@ const buildHomeTemplate = () => {
 return `
 <div class="main-container">
 <div class="persona-container">
-  <img class="persona-container-image" src="./assets/profile.jpeg" alt="profile-picture">
+  <img class="persona-container-image" src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg" alt="profile-picture">
   <div class="personal-info-container">
       <h2>Arnau Rovira</h2>
       <h3>JavaScript Developer</h3>
