@@ -1,9 +1,9 @@
 import './style.css'
 
 import {printNavbarTemplate as Nav} from "./components/navbar/navbar";
-import {printHomeTemplate as Home} from './components/home/home';
-import {printExperiencesTemplatePage as Experience} from './components/experience/experience';
-import {printProjectsTemplatePage as Projects} from './components/projects/projects'; 
+import {printHomeTemplate as RenderHome} from './components/home/home';
+import {printExperiencesTemplatePage as RenderExperience} from './components/experience/experience';
+import {printProjectsTemplatePage as RenderProjects} from './components/projects/projects'; 
 import {references} from './components/experience/references';
 import {projects} from './components/projects/projects-list';
 
@@ -14,7 +14,7 @@ import {projects} from './components/projects/projects-list';
 const buildPageTemplate = () => {
     Nav();
     document.querySelector('.main-menu-point:first-child').classList.add("menu-selected");
-    Home();
+    RenderHome();
     createButtonsListeners();
 
 };
@@ -30,21 +30,21 @@ const createButtonsListeners = () =>{
         switch (linkHref){
             case 'http://localhost:5173/home':
                 document.querySelector('main').innerHTML='';
-                Home();
+                RenderHome();
                 document.querySelector('.main-menu-point:nth-child(1)').classList.add("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(2)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(3)').classList.remove("menu-selected");
                 break;
             case 'http://localhost:5173/experience':
                 document.querySelector('main').innerHTML='';
-                Experience(references);
+                RenderExperience(references);
                 document.querySelector('.main-menu-point:nth-child(1)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(2)').classList.add("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(3)').classList.remove("menu-selected");
                 break;
             case 'http://localhost:5173/projects':
                 document.querySelector('main').innerHTML='';
-                Projects(projects);
+                RenderProjects(projects);
                 document.querySelector('.main-menu-point:nth-child(1)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(2)').classList.remove("menu-selected");
                 document.querySelector('.main-menu-point:nth-child(3)').classList.add("menu-selected");
