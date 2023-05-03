@@ -4,7 +4,7 @@ const buildNavbarTemplate = () => {
     return `
     <nav>
         <ul class="main-menu">
-            <li class="main-menu-point menu-selected">
+            <li class="main-menu-point">
                 <a href="/home" class="menu-button">Home</a>
             </li>
             <li class="main-menu-point">
